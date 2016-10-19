@@ -12,8 +12,8 @@ class AddCourse(Resource):
         conn = getConnection()
         # conn.execute(
         #     'CREATE TABLE courses (CourseID TEXT, CourseName TEXT)')
-        # conn.execute('insert into courses values (?,?)', row)
+        conn.execute('insert into courses values (?,?)', row)
         conn.commit()
         print "Table created successfully"
         conn.close()
-        return "User data stored"
+        return "course data stored"

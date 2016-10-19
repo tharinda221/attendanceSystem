@@ -15,4 +15,4 @@ class CourseRegister(Resource):
         conn.commit()
         print "Table created successfully"
         conn.close()
-        return "User data stored"
+        return "Course registration data stored"
